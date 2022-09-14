@@ -69,7 +69,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
-  // const errorCount = (finishTime - startTime) / errorCount;
+  const errorCount = (finishTime - startTime) / 1000;
 
   // show result modal
   resultModal.innerHTML = "";
@@ -88,7 +88,6 @@ const gameOver = () => {
   `;
 
   addHistory(questionText, timeTaken, errorCount);
-
   // restart everything
   startTime = null;
   errorCount = 0;
