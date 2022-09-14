@@ -10,30 +10,114 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        .container {
+            width: 90%;
+            margin: 0 auto;
+
+        }
+
+        h1.blog-title {
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .blog-area {
+            padding: 100px 0;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        ul li h4 {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            font-size: 18px;
+
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
 
 
-    <h1 class="title">Blog</h1>
-    <ul>
-        <li>
-            <h4>1. Local Storage and Session Storage difference?</h4>
-        </li>
-        <li>
-            <h4>1. Local Storage and Session Storage difference?</h4>
-            <p># localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends
-            </p>
-        </li>
-    </ul>
-    <h4>Global Scope and Blog Scope diffrence</h4>
-    <p></p>
-    <h4>How to work JavaScript Event Loop ?</h4>
-    <p></p>
-    <h4>How can I get undefined?</h4>
-    <p></p>
-    <h4></h4>
-    <p></p>
+    <div class="blog-area">
+        <div class="container">
+            <h1 class="blog-title">Blog</h1>
+            <ul>
+                <li>
+                    <h4>1. Local Storage and Session Storage difference?</h4>
+                </li>
+                <li>
+                    # localStorage data does not expire, whereas sessionStorage data is cleared when the page session
+                    ends
+                </li>
+                <li>
+                    # Local storage is the most recent mechanism. It allows for larger amounts (10MB) of data to be
+                    stored
+                </li>
+                <li>
+                    # This read-only interface property provides access to the Document’s local storage object
+                </li>
+                <li>
+                    # Session Storage objects can be accessed using the sessionStorage read-only property.
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h4>2. Global Scope and Blog Scope difference?</h4>
+                </li>
+                <li>
+                    # A global variable has global scope. A global variable is accessible from anywhere in the code.
+                    Local Scope
+                </li>
+                <li>
+                    # Variables declared inside a function is inside the local scope. ES6 introduced let and const
+                    variables, unlike var variables, they can be scoped to the nearest pair of curly braces
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h4>3. How to work JavaScript Event Loop ?</h4>
+                </li>
+                <li>
+                    # We’ll start with a somewhat of an odd claim — despite allowing async JavaScript code until ES6,
+                    JavaScript itself has actually never had any direct notion of asynchronicity built into it
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h4>4. How can I get undefined?</h4>
+                </li>
+                <li>
+                    # An undefined variable or anything without a value will always return "undefined" in JavaScript.
+                </li>
+                <li>
+                    # The undefined property indicates that a variable has not been assigned a value, or not declared at
+                    all.
+                </li>
+            </ul>
+
+        </div>
+    </div>
 
 
 
