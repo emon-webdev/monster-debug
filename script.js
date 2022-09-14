@@ -69,6 +69,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
+  // const errorCount = (finishTime - startTime) / errorCount;
 
   // show result modal
   resultModal.innerHTML = "";
@@ -120,7 +121,6 @@ const start = () => {
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
-      console.log(startTime)
     }
     count--;
   }, 1000);
