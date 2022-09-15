@@ -9,6 +9,7 @@ const modalBackground = document.getElementById("modal-background");
 // variables
 let userText = "";
 let errorCount = 0;
+//solved 1
 let startTime = 0;
 let questionText = "";
 
@@ -47,6 +48,7 @@ const typeController = (e) => {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    //solved 2
     errorCount++
   }
 
@@ -69,6 +71,7 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
+  //solved 3
   const timeTaken = parseInt((finishTime - startTime) / 1000);
 
   // show result modal
@@ -115,6 +118,7 @@ const start = () => {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
+      //solved 4
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
 
@@ -135,6 +139,7 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
+  //solved 5
   const timeSpentFloat = parseInt(timeSpent);
   
 
